@@ -437,17 +437,6 @@ $(function () {
 
 //Google map
 function initMap() {
-    var _location = {
-        lat: 40.712811,
-        lng: -73.997745
-    };
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: _location
-    });
-    var marker = new google.maps.Marker({
-        position: _location,
-        map: map
-        // icon: "images/marker.png"
-    });
+    
+    document.getElementById('map').innerHTML='<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d875.6827690345017!2d77.3646118!3d28.6078434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce565f0000001%3A0xf277953b8da7a926!2sIffort!5e0!3m2!1sen!2sin!4v1567415395979!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>';
 }
